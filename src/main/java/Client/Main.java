@@ -39,6 +39,7 @@ public class Main {
     }
 
     public static void connectToServer(String clientName) {
+        Logger logger = new Logger();
 
         try (Socket clientSocket = new Socket(ip, port)) {
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
@@ -48,7 +49,7 @@ public class Main {
 
             String response = in.readLine();
 
-            System.out.println(response);
+            logger.printAndWriteInfo(response);
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {

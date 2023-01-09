@@ -1,5 +1,6 @@
 package Server;
 
+import Logger.Logger;
 import ReaderSettingsFile.ReaderSettingFile;
 
 import java.io.*;
@@ -10,7 +11,8 @@ public class Main {
     public static int port;
 
     public static void main(String[] args) {
-        System.out.println("Server started");
+        Logger logger = new Logger();
+        logger.printAndWriteInfo("Server started");
 
         // Reading the port from the settings file
         ReaderSettingFile readerSettingFile = new ReaderSettingFile();
