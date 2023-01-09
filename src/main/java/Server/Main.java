@@ -12,11 +12,17 @@ public class Main {
 
     public static void main(String[] args) {
         Logger logger = new Logger();
-        logger.printAndWriteInfo("Server started");
 
         // Reading the port from the settings file
         ReaderSettingFile readerSettingFile = new ReaderSettingFile();
         port = readerSettingFile.getPort();
+
+        // Start Server
+        startServer(logger);
+    }
+
+    public static void startServer(Logger logger) {
+        logger.printAndWriteInfo("Server started");
 
         try (ServerSocket serverSocket = new ServerSocket(port)) {
             while (true) {
