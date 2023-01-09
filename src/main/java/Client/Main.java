@@ -19,11 +19,14 @@ public class Main {
         port = readerSettingFile.getPort();
         ip = readerSettingFile.getIp();
 
+        // Find out a client name
+        String clientName = findOutClientName();
+
         try (Socket clientSocket = new Socket(ip, port)) {
             PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
-            out.println("Vika");
+            out.println(clientName);
 
             String response = in.readLine();
             System.out.println(response);
@@ -32,5 +35,16 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static String findOutClientName() {
+        System.out.print("Please, enter your name: ");
+        try (BufferedReader readClientNameFromConsole = new BufferedReader(new InputStreamReader(System.in))) {
+            String clientName = readClientNameFromConsole.readLine();
+            return clientName;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
