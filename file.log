@@ -1,2 +1,7 @@
-[ 2023-01-09 23:35:44 ] Hello Vika, you port is 64273
-[ 2023-01-09 23:35:57 ] Hello Mika, you port is 64296
+[ 2023-01-09 23:51:36 ] Server started
+[ 2023-01-09 23:51:44 ] [SERVER] new connection to the port: 64761
+[ 2023-01-09 23:51:44 ] [CLIENT] Vika
+[ 2023-01-09 23:51:44 ] [SERVER] Hello Vika, you port is 64761
+[ 2023-01-09 23:51:52 ] [SERVER] new connection to the port: 64771
+[ 2023-01-09 23:51:52 ] [CLIENT] Mika
+[ 2023-01-09 23:51:52 ] [SERVER] Hello Mika, you port is 64771

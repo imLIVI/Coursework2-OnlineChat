@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Logger {
-    private static final String PATH_TO_LOG_FILE = "./file.log";
+    private final String PATH_TO_LOG_FILE = "./file.log";
 
     private void writeToLogFile(String infoForWriting) {
         try (BufferedWriter bufToLogFile = new BufferedWriter(new FileWriter(PATH_TO_LOG_FILE, true))) {

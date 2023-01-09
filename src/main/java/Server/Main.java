@@ -24,7 +24,7 @@ public class Main {
                 PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
                 BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
-                System.out.println("New connection. Port: " + clientSocket.getPort());
+                logger.printAndWriteInfo("[SERVER] new connection to the port: " + clientSocket.getPort());
 
                 final String name = in.readLine();
                 out.println(String.format("Hello %s, you port is %d", name, clientSocket.getPort()));

@@ -46,10 +46,11 @@ public class Main {
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
             out.println(clientName);
+            logger.printAndWriteInfo(String.format("[CLIENT] %s",clientName));
 
             String response = in.readLine();
 
-            logger.printAndWriteInfo(response);
+            logger.printAndWriteInfo(String.format("[SERVER] %s",response));
         } catch (UnknownHostException e) {
             e.printStackTrace();
         } catch (IOException e) {
