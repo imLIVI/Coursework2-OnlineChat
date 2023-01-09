@@ -1,7 +1,5 @@
 package ReaderSettingsFile;
 
-import ReaderSettingsFile.IncorrectSettingsFile;
-
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;

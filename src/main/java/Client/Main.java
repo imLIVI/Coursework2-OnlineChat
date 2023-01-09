@@ -1,5 +1,6 @@
 package Client;
 
+import Logger.Logger;
 import ReaderSettingsFile.ReaderSettingFile;
 
 import java.io.BufferedReader;
@@ -22,19 +23,8 @@ public class Main {
         // Find out a client name
         String clientName = findOutClientName();
 
-        try (Socket clientSocket = new Socket(ip, port)) {
-            PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
-            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-
-            out.println(clientName);
-
-            String response = in.readLine();
-            System.out.println(response);
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        // Connect to server
+        connectToServer(clientName);
     }
 
     public static String findOutClientName() {
@@ -46,5 +36,23 @@ public class Main {
             e.printStackTrace();
         }
         return null;
+    }
+
+    public static void connectToServer(String clientName) {
+
+        try (Socket clientSocket = new Socket(ip, port)) {
+            PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
+            BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
+
+            out.println(clientName);
+
+            String response = in.readLine();
+
+            System.out.println(response);
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
