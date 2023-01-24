@@ -36,13 +36,13 @@ is sent or received. The exit from the chat must be carried out by the exit comm
 </p>
 
 ## Example of program launch:
-1. Run SerberLoader.class 
+1. Run  ```SerberLoader.class```
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/63547457/214437975-12d6bd77-eef4-42b8-96a4-c2014d052332.png" alt="drawing" style="height:500px;"/>
   <img src="https://user-images.githubusercontent.com/63547457/214438352-8e40babd-0388-4d11-a574-6724cb973bcc.png" alt="drawing" style="width:500px;"/> 
 </p>
-2. Run multiple ClientLoader.class 
+2. Run multiple ```ClientLoader.class``` 
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/63547457/214438196-b137307d-2ae3-4c70-9f32-060e2976027d.png" alt="drawing" style="height:450px;"/>
@@ -55,7 +55,7 @@ is sent or received. The exit from the chat must be carried out by the exit comm
   <img src="https://user-images.githubusercontent.com/63547457/214439006-4f171e8c-a5fb-4808-b470-72438e1908f1.png" alt="drawing" style="width:850px;"/>
 </p>
 
-4. For exit enter "/exit"
+4. For exit enter ```/exit```
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/63547457/214439162-f8842168-bda4-4c22-a319-86e0182c2978.png" alt="drawing" style="width:850px;"/>
