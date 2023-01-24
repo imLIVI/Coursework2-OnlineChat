@@ -29,6 +29,12 @@ is sent or received. The exit from the chat must be carried out by the exit comm
 - [x] The code is covered by ```unit tests```.
 
 <a href="https://github.com/netology-code/jd-homeworks/blob/master/diploma/networkchat.md">(RUS version of description)</a>
+
+## The algorithm of the program
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/63547457/214442277-62a662b7-de9c-4310-82ba-8c114044c940.png" alt="drawing" style="width:1000px;"/>
+</p>
+
 ## Example of program launch:
 1. Run SerberLoader.class 
 
