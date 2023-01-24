@@ -1,7 +1,13 @@
-[ 2023-01-09 23:51:36 ] Server started
-[ 2023-01-09 23:51:44 ] [SERVER] new connection to the port: 64761
-[ 2023-01-09 23:51:44 ] [CLIENT] Vika
-[ 2023-01-09 23:51:44 ] [SERVER] Hello Vika, you port is 64761
-[ 2023-01-09 23:51:52 ] [SERVER] new connection to the port: 64771
-[ 2023-01-09 23:51:52 ] [CLIENT] Mika
-[ 2023-01-09 23:51:52 ] [SERVER] Hello Mika, you port is 64771
+[ 2023-01-25 01:37:06 ] Server started
+[ 2023-01-25 01:37:15 ] Authorized new socket: gi
+[ 2023-01-25 01:37:16 ] [gi] hi
+[ 2023-01-25 01:37:25 ] Authorized new socket: bi hi
+[ 2023-01-25 01:37:27 ] [bi hi] hi
+[ 2023-01-25 01:37:30 ] [bi hi] grg
+[ 2023-01-25 01:37:31 ] [bi hi] rr
+[ 2023-01-25 01:37:33 ] [gi] rr
+[ 2023-01-25 01:38:53 ] Server started
+[ 2023-01-25 01:39:04 ] Authorized new socket: vika
+[ 2023-01-25 01:39:06 ] [vika] hi
+[ 2023-01-25 01:39:11 ] Authorized new socket: nika
+[ 2023-01-25 01:39:13 ] [nika] hi

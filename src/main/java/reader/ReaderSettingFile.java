@@ -1,7 +1,6 @@
-package ReaderSettingsFile;
+package reader;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
@@ -28,11 +27,7 @@ public class ReaderSettingFile {
                             "about the port and ip address!");
                 }
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (IncorrectSettingsFile e) {
+        } catch (IOException | IncorrectSettingsFile e) {
             e.printStackTrace();
         }
     }

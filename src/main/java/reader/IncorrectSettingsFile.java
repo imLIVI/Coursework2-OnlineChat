@@ -1,4 +1,4 @@
-package ReaderSettingsFile;
+package reader;
 
 public class IncorrectSettingsFile extends RuntimeException {
     public IncorrectSettingsFile(String msg) {
