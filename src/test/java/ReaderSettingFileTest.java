@@ -14,8 +14,7 @@ public class ReaderSettingFileTest {
     public void startOfTest() {
         System.out.println("---------------------------------------\n[START OF THE TEST]");
     }
-    /*
-    ip = readerSettingFile.getIp();*/
+
     @Test
     @DisplayName("Проверка корректности считывания порта")
     public void testReadingPort_fail() {
